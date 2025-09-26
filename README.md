@@ -4,9 +4,19 @@
 
 ## 🎥 Demo Video
 
-[![Clarity Demo](https://cdn.loom.com/sessions/thumbnails/3424005c666a42b383f267bc65df8f2a-with-play.gif)](https://www.loom.com/share/3424005c666a42b383f267bc65df8f2a?sid=e84b2b9b-5892-4ec2-a697-9ff766fca7f4)
+[![Clarity Demo](./demo-image.png)](https://www.loom.com/share/bc54422e8bc54650bc559e3059dac105?sid=ed7a698d-20a5-4030-9c06-6eada902c1ab)
 
 _Click to watch the full demo_
+
+## 📊 Presentation
+
+[![Hackathon Presentation](./presentation-image.png)](https://www.figma.com/deck/EdLgcV41ZVdtp1TzYb8JKO/hackthon-Presentation?node-id=1-38&t=sPRHiW6z6zOCGqzf-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
+
+_View our hackathon presentation_
+
+## 🌐 First Frontend design with lovable
+
+Check here: [https://preview--clarity-talk-studio.lovable.app/](https://preview--clarity-talk-studio.lovable.app/)
 
 ## 🚀 What is Clarity?
 
