@@ -1,0 +1,34 @@
+# requirements.txt
+# Backend dependencies for Clarity - AI conversational app with multi-agent interactions
+
+# FastAPI and web server dependencies
+fastapi==0.117.1
+uvicorn==0.37.0
+python-multipart==0.0.12
+python-dotenv==1.1.1
+starlette==0.48.0
+websockets==15.0.1
+
+# CORS support
+fastapi[cors]==0.117.1
+
+# Autogen multi-agent framework
+autogen-agentchat==0.7.4
+autogen-core==0.7.4
+autogen-ext==0.7.4
+
+# OpenAI for LLM integration
+openai==1.109.1
+
+# File handling utilities (keeping for potential future use)
+aiofiles==24.1.0
+
+# Data processing and validation
+pydantic==2.11.9
+pydantic-core==2.33.2
+PyYAML==6.0.2
+
+# Utility libraries
+tqdm==4.67.1
+requests==2.32.5
+typing-extensions==4.15.0

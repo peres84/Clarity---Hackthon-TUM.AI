@@ -1,0 +1,10 @@
+# model_config.yaml
+# Autogen model configuration for Clarity app
+
+# OpenAI GPT-4o-mini for conversation agents
+provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+config:
+  model: gpt-4o-mini
+  api_key: ${OPENAI_API_KEY}
+  temperature: 0.7
+  max_tokens: 1000

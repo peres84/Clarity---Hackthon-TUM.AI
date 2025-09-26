@@ -1,0 +1,296 @@
+/* src/index.css */
+/* Global styles for Clarity app with brand colors and fonts */
+
+/* Import Google Fonts - Montserrat for headings, Lato for body text */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Lato', system-ui, sans-serif;
+  }
+
+  body {
+    @apply font-body text-gray-900 bg-gray-50;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 rounded;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
+  }
+}
+
+@layer components {
+  /* Button variants */
+  .btn-primary {
+    @apply px-6 py-3 bg-primary-teal text-white font-medium rounded-lg;
+    @apply hover:bg-primary-blue transition-colors duration-200;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-teal focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-white text-primary-blue border border-primary-blue font-medium rounded-lg;
+    @apply hover:bg-primary-blue hover:text-white transition-colors duration-200;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-blue focus:ring-offset-2;
+  }
+
+  .btn-accent {
+    @apply px-6 py-3 bg-accent-green text-white font-medium rounded-lg;
+    @apply hover:bg-green-600 transition-colors duration-200;
+    @apply focus:outline-none focus:ring-2 focus:ring-accent-green focus:ring-offset-2;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200;
+  }
+
+  .card-hover {
+    @apply card transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  /* Input styles */
+  .input-primary {
+    @apply px-4 py-3 border border-gray-300 rounded-lg;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-teal focus:border-transparent;
+    @apply placeholder-gray-500 transition-colors duration-200;
+  }
+
+  /* Message bubble styles */
+  .message-bubble-user {
+    @apply bg-primary-teal text-white px-4 py-2 rounded-2xl rounded-br-sm max-w-md;
+  }
+
+  .message-bubble-agent {
+    @apply bg-white text-gray-800 px-4 py-2 rounded-2xl rounded-bl-sm max-w-md shadow-sm border border-gray-200;
+  }
+
+  /* Avatar styles */
+  .avatar-ring-active {
+    @apply ring-4 ring-primary-teal ring-opacity-30;
+  }
+
+  .avatar-ring-speaking {
+    @apply ring-4 ring-accent-green ring-opacity-50 animate-pulse;
+  }
+}
+
+@layer utilities {
+  /* Custom animations */
+  .animate-bounce-subtle {
+    animation: bounce-subtle 1s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.3s ease-out;
+  }
+
+  /* Animation delays for speaking effects */
+  .animation-delay-150 {
+    animation-delay: 150ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-450 {
+    animation-delay: 450ms;
+  }
+
+  /* Text clamp utilities */
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Gradient backgrounds */
+  .bg-gradient-clarity {
+    background: linear-gradient(135deg, #1C4E80 0%, #2EA4D8 50%, #64B62D 100%);
+  }
+
+  .bg-gradient-clarity-light {
+    background: linear-gradient(135deg, rgba(28, 78, 128, 0.1) 0%, rgba(46, 164, 216, 0.1) 50%, rgba(100, 182, 45, 0.1) 100%);
+  }
+
+  /* Text gradients */
+  .text-gradient-clarity {
+    background: linear-gradient(135deg, #1C4E80, #2EA4D8, #64B62D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Enhanced shadows */
+  .shadow-3xl {
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Smooth hover transformations */
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  /* Glass effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
+
+/* Custom keyframes */
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading spinner */
+.loading-spinner {
+  @apply w-6 h-6 border-2 border-gray-300 border-t-primary-teal rounded-full animate-spin;
+}
+
+/* Custom range input styles */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 4px;
+  background: #e5e7eb;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2EA4D8;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2EA4D8;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Volume slider specific styles */
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #2EA4D8;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #2EA4D8;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* WebKit specific styles for better browser support */
+@supports (-webkit-appearance: none) {
+  input[type="range"]::-webkit-slider-thumb {
+    transition: all 0.2s ease;
+  }
+
+  input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+    background: #1C4E80;
+  }
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+input:focus-visible,
+[role="button"]:focus-visible {
+  @apply outline-none ring-2 ring-primary-teal ring-offset-2;
+}
+
+/* Dark mode support (future enhancement) */
+@media (prefers-color-scheme: dark) {
+  /* Dark mode styles would go here */
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
