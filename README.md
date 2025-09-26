@@ -2,11 +2,19 @@
 
 > **Note**: I apologize for some aspects of the code/architecture - I understand there are better ways to implement certain features, and there are many hardcoded parts, but this was necessary due to the time constraints of showcasing a working demo for the hackathon!
 
-## 🎥 Demo Video
+## 🎥 Demo Videos
+
+### Main Demo
 
 [![Clarity Demo](./demo-image.png)](https://www.loom.com/share/bc54422e8bc54650bc559e3059dac105?sid=ed7a698d-20a5-4030-9c06-6eada902c1ab)
 
 _Click to watch the full demo_
+
+### Conversation Mode Demo
+
+[![Conversation Mode Demo](./conversation-image.png)](https://www.loom.com/share/8533741e3af145ad84af6c8a560060ec?sid=841e1c99-aa4b-46b1-9be3-08a8f81004a6)
+
+_See Clarity's conversational learning in action_
 
 ## 📊 Presentation
 
