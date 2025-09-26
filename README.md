@@ -18,9 +18,14 @@ _See Clarity's conversational learning in action_
 
 ## 📊 Presentation
 
-[![Hackathon Presentation](./presentation-image.png)](https://www.figma.com/deck/EdLgcV41ZVdtp1TzYb8JKO/hackthon-Presentation?node-id=1-38&t=sPRHiW6z6zOCGqzf-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
+[![Hackathon Presentation](./presentation-image.png)](https://www.loom.com/share/8171c0be440647d3861c21b339cf8bac?sid=4b65da40-37ec-4f62-a183-df4b5d4be9fe)
 
 _View our hackathon presentation_
+
+### Alternative Links
+
+- [Figma Presentation Deck](https://www.figma.com/deck/EdLgcV41ZVdtp1TzYb8JKO/hackthon-Presentation?node-id=1-38&t=sPRHiW6z6zOCGqzf-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
+- [Video Presentation](https://www.loom.com/share/8171c0be440647d3861c21b339cf8bac?sid=4b65da40-37ec-4f62-a183-df4b5d4be9fe)
 
 ## 🌐 First Frontend design with lovable
 
